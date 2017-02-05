@@ -18,4 +18,11 @@ describe('OCR', function() {
     const actual = numberByOCRText(five)
     expect(actual).to.equal(5);
   });
+  it('find single nine by text', function() {
+    const nine = " _ " +
+                 "|_|" +
+                 " _|";
+    const actual = numberByOCRText(nine)
+    expect(actual).to.equal(9);
+  });
 });
